@@ -11,7 +11,6 @@ const TermsModal: React.FC<TermsModalProps> = ({ onClose }) => {
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <div className="modal-header">
                     <h2>Ekwantu Consulting - Visitor Terms and Conditions</h2>
-                    <button onClick={onClose} className="close-button">&times;</button>
                 </div>
                 <div className="modal-body">
                     <p>By signing in, you agree to the following terms and conditions:</p>
@@ -73,5 +72,4 @@ const TermsModal: React.FC<TermsModalProps> = ({ onClose }) => {
         </div>
     );
 };
-
 export default TermsModal;

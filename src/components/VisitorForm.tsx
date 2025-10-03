@@ -141,12 +141,7 @@ const VisitorForm: React.FC = () => {
                         {submissionSuccess ? (
                             <div className="success-view">
                                 <h2>Thank You!</h2>
-                                <p>Your host has been notified. Please take a seat in the waiting area.</p>
-                                <div className="wifi-info">
-                                    <p>You can connect to our guest WiFi.</p>
-                                    <p><strong>Network:</strong> Guest WiFi</p>
-                                    <p><strong>Password:</strong> Ekwantu2026</p>
-                                </div>
+                                <p>Your host will be notified shortly. Please take a seat in the waiting area and have a great day.</p>
                                 <button onClick={handleResetView} className="landing-button">
                                     Sign in Another Visitor
                                 </button>
@@ -229,3 +224,4 @@ const VisitorForm: React.FC = () => {
     );
 };
 export default VisitorForm;
+

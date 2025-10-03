@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(249, 249, 249, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
 
 .modal-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid #eee;
     padding-bottom: 1rem;
@@ -35,14 +35,11 @@
     margin: 0;
     font-size: 1.2rem;
     color: #333;
+    text-align: center;
 }
 
 .close-button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #888;
+    display: none;
 }
 
 .modal-body {
@@ -50,6 +47,24 @@
     flex-grow: 1;
     font-size: 0.9rem;
     color: #555;
+    /* For Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #fff;
+}
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+.modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: #fff; /* White track */
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Light grey thumb */
+    border-radius: 4px;
+    border: 2px solid #fff; /* Creates padding around thumb */
 }
 
 .modal-body ol {
@@ -75,3 +90,4 @@
     margin-top: 1rem;
     text-align: right;
 }
+
