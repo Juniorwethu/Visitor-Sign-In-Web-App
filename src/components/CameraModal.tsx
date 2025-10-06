@@ -8,8 +8,8 @@ interface CameraModalProps {
 }
 
 const videoConstraints = {
-    width: 1280,
-    height: 720,
+    width: { ideal: 1280 },
+    height: { ideal: 720 },
     facingMode: 'user',
 };
 
@@ -29,10 +29,8 @@ const CameraModal: React.FC<CameraModalProps> = ({ onCapture, onClose }) => {
             <div className="camera-modal-content">
                 <Webcam
                     audio={false}
-                    height={720}
                     ref={webcamRef}
                     screenshotFormat="image/jpeg"
-                    width={1280}
                     videoConstraints={videoConstraints}
                     className="webcam-feed"
                 />

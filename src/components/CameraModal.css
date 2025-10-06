@@ -49,3 +49,21 @@
 .close-camera-button:hover {
     background-color: #5a6268;
 }
+
+@media (max-width: 768px) {
+    .camera-modal-content {
+        padding: 0.5rem;
+    }
+
+    .camera-controls {
+        bottom: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .capture-button, .close-camera-button {
+        width: 100%;
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+    }
+}

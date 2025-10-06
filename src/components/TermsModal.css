@@ -91,3 +91,18 @@
     text-align: right;
 }
 
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .modal-header h2 {
+        font-size: 1rem;
+    }
+
+    .modal-body {
+        font-size: 0.85rem;
+    }
+}
+
